@@ -3,7 +3,7 @@ import { CategoryCard } from "../../../components/CategoryCard";
 import { Navbar } from "../../../components/NavbarCrud"
 import Category from "../../../models/category";
 
-export async function loadCategorys() {
+async function loadCategorys() {
   await dbConnect();
   return Category.find();
 }
